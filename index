@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean Shop</title>
+  <link rel="stylesheet" href="Carpeta css/styless.css">
+</head>
+<body>
+
+<header>
+  <h1>🇰🇷 Shop 𐔌՞. .՞𐦯</h1>
+  <input type="text" id="buscador" placeholder=" ⌕ ... " onkeyup="buscarProductos()">
+</header>
+
+<nav>
+  <button onclick="filtrarCategoria('todos')">Todos</button>
+  <button onclick="filtrarCategoria('comida')">Comida 𓐐𓎩</button>
+  <button onclick="filtrarCategoria('skincare')">Skincare ♡</button>
+  <button onclick="filtrarCategoria('kpop')">K-pop</button>
+  <button onclick="mostrarCarrito()">🛒 Carrito</button>
+</nav>
+
+<section class="grid" id="productos">
+
+  <div class="card" data-categoria="comida">
+    <img src="img/ramen.jpg">
+    <div class="info">
+      <h3>Ramen Coreano</h3>
+      <p>$45</p>
+      <button onclick="agregarCarrito('Ramen Coreano',45)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card" data-categoria="comida">
+    <img src="img/tteokbokki.jpg">
+    <div class="info">
+      <h3>Tteokbokki</h3>
+      <p>$60</p>
+      <button onclick="agregarCarrito('Tteokbokki',60)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card" data-categoria="skincare">
+    <img src="img/mascarilla.jpg">
+    <div class="info">
+      <h3>Mascarilla Facial</h3>
+      <p>$30</p>
+      <button onclick="agregarCarrito('Mascarilla Facial',30)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card" data-categoria="skincare">
+    <img src="img/crema.jpg">
+    <div class="info">
+      <h3>Crema Coreana</h3>
+      <p>$120</p>
+      <button onclick="agregarCarrito('Crema Coreana',120)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card" data-categoria="kpop">
+    <img src="img/bts.jpg">
+    <div class="info">
+      <h3>Álbum BTS</h3>
+      <p>$350</p>
+      <button onclick="agregarCarrito('Álbum BTS',350)">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card" data-categoria="kpop">
+    <img src="img/blackpink.jpg">
+    <div class="info">
+      <h3>Lightstick BLACKPINK</h3>
+      <p>$800</p>
+      <button onclick="agregarCarrito('Lightstick BLACKPINK',800)">Agregar</button>
+    </div>
+  </div>
+
+</section>
+
+<section id="carrito" class="oculto">
+  <h2>Carrito</h2>
+  <ul id="listaCarrito"></ul>
+  <p id="total"></p>
+  <button onclick="vaciarCarrito()">Vaciar carrito</button>
+</section>
+
+<script src="Carpeta js/app.js"></script>
+</body>
+</html>
