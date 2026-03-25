@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f9def5;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: rgb(244, 247, 249);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+header input {
+  margin-top: 10px;
+  padding: 12px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffebf2;
+  color: #ff4d88;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD PRODUCTO */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.card img {
+  width: 60%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* INFO */
+.card .info {
+  padding: 10px;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card p {
+  color: #ff4d88;
+  font-weight: bold;
+}
+
+/* BOTÓN */
+.card button {
+  width: 100%;
+  margin-top: 8px;
+  background: #c78da0;
+  color: white;
+  border: none;
+}
+
+/* CARRITO */
+#carrito {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* OCULTO */
+.oculto {
+  display: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.card {
+  text-align: center;
+}
